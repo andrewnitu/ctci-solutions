@@ -1,7 +1,4 @@
 public class Question1_1 {
-    public Question1_1() {
-    }
-
     // O(n) time complexity.
     // O(1) memory.
 
