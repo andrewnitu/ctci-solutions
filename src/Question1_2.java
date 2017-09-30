@@ -2,7 +2,13 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Question1_2 {
+    // O(m + n) time complexity
+    // O(1) space
     public boolean isPermutationArray(String string1, String string2) {
+        if (string1.length() != string2.length()) {
+            return false;
+        }
+
         int[] charsExist = new int[128];
 
         // Initialize the array to be all false
@@ -29,14 +35,7 @@ public class Question1_2 {
             }
             charsExist[j]--;
         }
-
-        // Check that we have no leftover characters from the first string!
-        for (int i = 0; i < 128; i++) {
-            if (charsExist[i] != 0) {
-                return false;
-            }
-        }
-
+        
         return true;
     }
 
