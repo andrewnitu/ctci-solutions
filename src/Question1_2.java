@@ -35,10 +35,11 @@ public class Question1_2 {
             }
             charsExist[j]--;
         }
-        
+
         return true;
     }
 
+    // O(mlogm + nlogn) time complexity
     public boolean isPermutationSort(String string1, String string2) {
         char chars1[] = string1.toCharArray();
         char chars2[] = string2.toCharArray();
