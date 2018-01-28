@@ -3,6 +3,7 @@ public class Runner {
         Question1_1 question1_1 = new Question1_1();
         Question1_2 question1_2 = new Question1_2();
         Question1_3 question1_3 = new Question1_3();
+        Question1_4 question1_4 = new Question1_4();
 
         if (!(!question1_1.isUniqueChars("thelazybrowndogjumpedover")
                 &&
@@ -18,7 +19,9 @@ public class Runner {
                 &&
                 question1_3.urlify("Mr John Smith    ", 13).equals("Mr%20John%20Smith")
                 &&
-                question1_3.urlify("This is a test      ", 14).equals("This%20is%20a%20test"))) {
+                question1_3.urlify("This is a test      ", 14).equals("This%20is%20a%20test")
+                &&
+                question1_4.isPermutationOfPalindrome("Tact Coa"))) {
             System.out.println("Some tests failed");
             System.exit(1);
         }
