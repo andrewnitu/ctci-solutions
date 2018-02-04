@@ -22,7 +22,7 @@ public class Question1_2 {
         for (int i = 0; i < string1.length(); i++) {
             currentChar = string1.charAt(i);
 
-            charsExist[i]++;
+            charsExist[currentChar]++;
         }
 
         // Count every character found in the second string
@@ -30,10 +30,10 @@ public class Question1_2 {
             currentChar = string2.charAt(j);
 
             // Return false if we run out of characters in the first string found in the second string
-            if (charsExist[j] == 0) {
+            if (charsExist[currentChar] == 0) {
                 return false;
             }
-            charsExist[j]--;
+            charsExist[currentChar]--;
         }
 
         return true;
