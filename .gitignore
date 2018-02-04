@@ -1,3 +1,7 @@
+# IntelliJ shite
 .idea
 *.iml
 /out
+
+# Maven build directory
+/target
