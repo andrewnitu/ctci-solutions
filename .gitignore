@@ -5,3 +5,7 @@
 
 # Maven build directory
 /target
+
+# JDT VSCode extension shite
+.classpath
+.project
