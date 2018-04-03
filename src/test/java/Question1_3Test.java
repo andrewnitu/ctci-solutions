@@ -1,4 +1,4 @@
-import junit.framework.Assert;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class Question1_3Test {

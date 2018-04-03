@@ -1,6 +1,5 @@
-import junit.framework.Assert;
+import org.junit.Assert;
 import org.junit.Test;
-
 public class Question1_4Test {
 	@Test
 	public void testUrlify() {
