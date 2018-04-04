@@ -1,15 +1,15 @@
 public class Question1_7 {
-    // O(x) time complexity
-    // O(x) space complexity
+    // O(n^2) time complexity
+    // O(1) space complexity
 
     // Should rotate clockwise 90 degrees
     public int[][] rotateMatrix(int[][] matrix) {
         int s = matrix.length;
 
         // Iterate each layer
-        for(int i = 0; i < s/2; i++) {
+        for (int i = 0; i < s/2; i++) {
             // Iterate each position on the side
-            for(int j = i; j < s - i - 1; j++) {
+            for (int j = i; j < s - i - 1; j++) {
                 int tmp = matrix[i][j];
 
                 matrix[i][j] = matrix[s-j-1][i];
