@@ -3,7 +3,7 @@ public class Question1_7 {
     // O(x) space complexity
 
     // Should rotate clockwise 90 degrees
-    public void rotateMatrix(int[][] matrix) {
+    public int[][] rotateMatrix(int[][] matrix) {
         int s = matrix.length;
 
         // Iterate each layer
@@ -16,10 +16,12 @@ public class Question1_7 {
 
                 matrix[s-j-1][i] = matrix[s-i-1][s-j-1];
 
-                matrix[s-i-1][s-i-j] = matrix[j][s-i-1];
+                matrix[s-i-1][s-j-1] = matrix[j][s-i-1];
 
                 matrix[j][s-i-1] = tmp;
             }
         }
+
+        return matrix;
     }
 }
