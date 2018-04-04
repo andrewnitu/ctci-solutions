@@ -3,7 +3,7 @@ import org.junit.Test;
 
 public class Question1_7Test {
 	@Test
-	public void testRotate() {
+	public void testRotateMatrix() {
         Question1_7 question1_7 = new Question1_7();
 
         int[][] testMatrix = 
@@ -22,6 +22,6 @@ public class Question1_7Test {
             {16,12, 8, 4}
         };
 
-        assertArrayEquals(question1_7.rotateMatrix(testMatrix), answer);
+        assertArrayEquals(answer, question1_7.rotateMatrix(testMatrix));
     }
 }
