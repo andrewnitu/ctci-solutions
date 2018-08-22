@@ -17,6 +17,6 @@ public class Question1_2Test {
 
         assertTrue(question1_2.isPermutationSort("Rotor", "toroR"));
         assertTrue(!question1_2.isPermutationSort("Lololololol", "Lolololololo"));
-        assertTrue(!question1_2.isPermutationArray("Rotor", "Rotoe"));
+        assertTrue(!question1_2.isPermutationSort("Rotor", "Rotoe"));
     }
 }
